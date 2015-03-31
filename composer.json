@@ -1,0 +1,16 @@
+{
+    "require": {
+        "illuminate/database": "4.2.6"
+    }
+}
+{
+    "autoload": {
+        "classmap": [
+            "application/classes",
+            "application/core",
+            "application/models",
+            "application/presenters",
+            "application/libraries"
+        ]
+    }
+}
