@@ -2,3 +2,4 @@
  
 $config['template_dir'] = APPPATH.'views';
 $config['cache_dir'] = APPPATH.'cache/twig';
+$config['ext'] = '.html';
