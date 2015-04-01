@@ -25,7 +25,7 @@ class Welcome extends CI_Controller {
 		$data['title'] = "Welcome to CodeIgniter";
 		$data['head']  = "Welcome to CodeIgniter!";
 		$data['content']  = "The page you are looking at is being generated dynamically by CodeIgniter and template engine Twig.";
-		$this->twig->display('view.html', $data);
+		$this->twig->display('view', $data);
 		// $this->load->view('welcome_message');
 	}
 
