@@ -14,6 +14,7 @@ class Twig
 	private $_twig;
 	private $_template_dir;
 	private $_cache_dir;
+	private $_ext;
 
 	function __construct($debug = false)
 	{
@@ -27,6 +28,7 @@ class Twig
 		Twig_Autoloader::register();
 		$this->_template_dir = $this->CI->config->item('template_dir');
 		$this->_cache_dir = $this->CI->config->item('cache_dir');
+		$this->_ext = $this->CI->config->item('ext');
 		$loader = new Twig_Loader_Filesystem($this->_template_dir);
 		$this->_twig = new Twig_Environment($loader, array(
                 'cache' => $this->_cache_dir,
@@ -50,7 +52,7 @@ class Twig
 	}
 	public function display($template, $data = array()) 
 	{
-		$template = $this->_twig->loadTemplate($template);
+		$template = $this->_twig->loadTemplate($template.$this->_ext);
 		/* elapsed_time and memory_usage */
 		$data['elapsed_time'] = $this->CI->benchmark->elapsed_time('total_execution_time_start', 'total_execution_time_end');
 		$memory = (!function_exists('memory_get_usage')) ? '0' : round(memory_get_usage()/1024/1024, 2) . 'MB';
