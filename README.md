@@ -1,5 +1,4 @@
-# first-CI-3
-first CI 3 using orm and template engine twig
+# CodeIgniter 3.0.0 with ORM and Twig
 
 Clone or Download Extract it into your web server's www folder. Browse to /index.php/welcome. You should see CodeIgniter Welcome Page.
 
