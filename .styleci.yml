@@ -1,11 +1,8 @@
 preset: recommended
 
 enabled:
-    - ordered_use
     - strict
 
 disabled:
     - empty_return
-
-    # To avoid Resource / resource confusion
-    - phpdoc_types
+    - phpdoc_types # To avoid Resource / resource confusion
