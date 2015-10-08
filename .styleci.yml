@@ -2,7 +2,7 @@ preset: recommended
 
 enabled:
     - ordered_use
-    - return
+    - strict
 
 disabled:
     - empty_return
