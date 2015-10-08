@@ -1,0 +1,11 @@
+preset: recommended
+
+enabled:
+    - ordered_use
+    - return
+
+disabled:
+    - empty_return
+
+    # To avoid Resource / resource confusion
+    - phpdoc_types
