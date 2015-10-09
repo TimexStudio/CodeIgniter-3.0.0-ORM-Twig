@@ -3,9 +3,7 @@
 Clone or Download Extract it into your web server's www folder. Browse to /index.php/welcome. You should see CodeIgniter Welcome Page.
 ## Adding awesome error Whoops
     after clone and running composer update
-    ```php
-        composer update 
-    ```
+    composer update
 
 Testing ORM browse to /index.php/elegant, before access to url create database and table user, setting configure database /config/database.php
 
