@@ -4,6 +4,9 @@ Clone or Download Extract it into your web server's www folder. Browse to /index
 
 Testing ORM browse to /index.php/elegant, before access to url create database and table user, setting configure database /config/database.php
 
+## Adding awesome error Whoops
+    ```php composer install```
+
 ## Usage
 ### Defining Models
 Models in Elegant ORM (as in other ORMs) represent a single table to work with. To define a model, it's about the same with non-ORM CodeIgniter, but instead of extending `CI_Model`, the ORM model should extends `Elegant\Model` class.
