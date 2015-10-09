@@ -1,11 +1,13 @@
 # CodeIgniter 3.0.0 with ORM and Twig
 
 Clone or Download Extract it into your web server's www folder. Browse to /index.php/welcome. You should see CodeIgniter Welcome Page.
+## Adding awesome error Whoops
+    after clone and running composer update
+    ```php
+        composer update 
+    ```
 
 Testing ORM browse to /index.php/elegant, before access to url create database and table user, setting configure database /config/database.php
-
-## Adding awesome error Whoops
-    ```php composer install```
 
 ## Usage
 ### Defining Models
