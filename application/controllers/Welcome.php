@@ -28,6 +28,19 @@ class Welcome extends CI_Controller {
 		{
   			echo $user->name;
 		}
-
+	}
+	
+	public function easy() 
+	{
+		//use library easy parse
+		$this->load->library('easy_parser');
+		$q = $this->db->get('user');
+		$data = array(
+				'title' => "Welcome to CodeIgniter",
+				'head'  => "Welcome to CodeIgniter!",
+				'user'	=> $q->result()
+		);
+		//this use easy parse
+		$this->easy_parser->parse('index', $data);
 	}
 }
