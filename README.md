@@ -1,9 +1,13 @@
 # CodeIgniter 3.0.0 with ORM and Twig
 
+## Install 
+
 1. Clone or Download Extract it into your web server's www folder. Browse to /index.php/welcome. You should see CodeIgniter Welcome Page.
 
-2. Use Composer to install Whoops into your project:
-    ``composer require filp/whoops``
+2. Install the latest version using composer.
+``` bash
+$ composer create-project --no-interaction --stability=dev timexstudio/codeigniter-3-orm-twig apps
+```
 
 Testing ORM browse to /index.php/elegant, before access to url create database and table user, setting configure database /config/database.php
 
