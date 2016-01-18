@@ -1,16 +1,16 @@
 language: php
-sudo: false
-
-cache:
-  directories:
-    - application/cache/
 
 php:
- - php: 5.3
- - php: 5.4
- - php: 5.5
- - php: 5.6
- - php: 5.6
+  - 5.5
+  - 5.6
+  - 7
 
-install:
-  - travis_retry composer install --no-interaction --prefer-source
+sudo: false
+
+before_script: composer install
+
+script: phpunit --coverage-text
+
+notifications:
+  email:
+    - purwantoyudi42@gmail.com
