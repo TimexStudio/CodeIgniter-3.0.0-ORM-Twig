@@ -60,7 +60,7 @@ $autoload['packages'] = array();
 |	$autoload['libraries'] = array('user_agent' => 'ua');
 */
 
-$autoload['libraries'] = array('database', 'elegant-orm/elegant', 'Whoops');
+$autoload['libraries'] = array('database', 'elegant-orm/Elegant', 'Whoops');
 
 
 /*
